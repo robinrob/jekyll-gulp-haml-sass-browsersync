@@ -80,7 +80,6 @@ function hamlBuild() {
     )
 }
 
-
 /* Watch and compile only changed HAML files to HTML.
  * haml-watch has its own task to avoid doing a full HAML build on each .haml file change, since a full HAML build
  * can be quite slow.
@@ -98,7 +97,6 @@ gulp.task('haml-build', function () {
         .pipe(hamlBuild())
         .pipe(gulp.dest('./'))
 })
-
 
 /* Compile all SASS to CSS */
 gulp.task('sass', function () {
