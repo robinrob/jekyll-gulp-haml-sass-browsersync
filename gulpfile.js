@@ -70,7 +70,7 @@ gulp.task('browser-sync', function () {
     })
 })
 
-/* hamlBuild() contains the logic used by haml-watch and haml-build */
+/* hamlBuild() contains the shared logic used by haml-watch and haml-build */
 function hamlBuild() {
     return combiner(
         haml(),
